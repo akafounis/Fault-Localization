@@ -5,8 +5,8 @@ To use the fault-localization techniques, the CPAchecker must be cloned in your 
 [https://cpachecker.sosy-lab.org/](url) \
 Then, you have to build the project using the `ant` command. \
 Finally, the program can be run using the following command: \
-`scripts/cpa.sh -explainer test/programs/faultlocalization/benchmarks/maxLoop/maxLoop1.c` \ 
-In the above command, if you add the `-setprop explainer.distanceMetric=` you can specify which technique you want to use for the fault-localization. \
+`scripts/cpa.sh -explainer test/programs/faultlocalization/benchmarks/maxLoop/maxLoop1.c` 
+If you add the following property `-setprop explainer.distanceMetric=` in the command above, you can specify which technique you want to use for the fault-localization. \
 For example: 
 - `-setprop explainer.distanceMetric=PG ` for Automated Path Generation
 - `-setprop explainer.distanceMetric=ADM ` for Abstract Distance Metric
